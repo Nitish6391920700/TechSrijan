@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Hero.module.css";
 import { Link } from "react-router-dom";
 import Button from "../common/Button/Button";
-import text_img from "./text.svg";
+import text_img from "./text.png";
 
 const Hero = () => {
   // const [countDays, setDays] = useState(false);
@@ -53,7 +53,7 @@ const Hero = () => {
           <img src={text_img} className={classes.text_img} alt="text_img" />
 
           <h4 className={classes.caption}>Let&apos;s make a tech move!</h4>
-          <p className={classes.date}>February 20-21, 2023</p>
+          <p className={classes.date}>December 27-29, 2024</p>
           <Link
             className={classes.anchorBtn}
             // target="_blank"

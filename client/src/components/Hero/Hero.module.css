@@ -6,9 +6,9 @@
 .hero {
   width: 100vw;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
-    url("./Hero.svg");
+    url("https://getwallpapers.com/wallpaper/full/b/0/4/1189112-pirate-ships-wallpaper-1920x1080-photos.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   height: 100vh;
   /* margin-top: 400px; */
 }
@@ -42,7 +42,7 @@
   margin-bottom: 3.5rem;
 }
 .text_img {
-  width: 500px;
+  width: 800px;
 }
 
 .caption {
