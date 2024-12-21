@@ -1,7 +1,8 @@
 // import Button from "../common/Button/Button";
 import classes from "./About.module.css";
 import about from "./about.svg";
-
+import text from "../Hero/text.png";
+import ship from '../EventSection/iland.png'
 const About = () => {
   return (
     <>
@@ -9,9 +10,18 @@ const About = () => {
         <div className={classes.about}>
           <div className={classes.details}>
             <h3 className={classes.heading}>About</h3>
-            <h2 className={classes.heading1}>SAMBHAV 23</h2>
+            {/* <h2 className={classes.heading1}>SAMBHAV 23</h2> */}
+            <img 
+  src={text} 
+  alt="" 
+  style={{
+    width: "100%", 
+     
+    
+  }} 
+/>
             <p className={classes.para}>
-              Sambhav is a technical festival offering a diverse range of events
+              TechSrijan is a technical festival offering a diverse range of events
               and competitions focused on technology and innovation. It provides
               a platform for individuals to showcase their skills, learn from
               others, and foster creativity, teamwork, and problem-solving
@@ -19,7 +29,7 @@ const About = () => {
               technology, Sambhav helps broaden their knowledge and skillset,
               making it a fun, engaging, and enriching experience for all
               attendees. Get ready to be a part of the biggest technical
-              extravaganza of the year 2k23 – Sambhav!
+              extravaganza of the year 2k24 – TechSrijan!
             </p>
 
             {/* <p className={classes.para}>
@@ -37,7 +47,7 @@ const About = () => {
           </div>
 
           <div className={classes.composition}>
-            <img className={classes.images} src={about} alt="about" />
+            <img className={classes.images} src={ship} alt="about" />
           </div>
         </div>
       </section>
