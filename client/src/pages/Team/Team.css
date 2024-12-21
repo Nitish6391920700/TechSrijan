@@ -5,168 +5,85 @@ body, html {
     font-family: Arial, sans-serif;
     background-color: #0b0c10; /* Dark background */
     color: white;
-}
-
-/* Main container */
-.team-page {
+  }
+  
+  /* Main container */
+  .team-page {
     text-align: center;
     padding: 20px;
-}
-
-/* Header */
-.header {
+  }
+  
+  /* Header */
+  .header {
     margin-bottom: 20px;
-}
-
-.core-team-title {
+  }
+  
+  .core-team-title {
     font-size: 48px;
     font-weight: bold;
     color: #f0e68c; /* Light glow effect */
     text-shadow: 0 0 15px #f0e68c, 0 0 30px #f0e68c;
-}
-
-/* Team container */
-.team-container {
+  }
+  
+  /* Team container */
+  .team-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center; /* Center team members */
-}
-
-/* Sidebar */
-.sidebar {
-    width: 20%;
-    padding: 10px;
-    background-color: #1f2833;
-    border-radius: 10px;
-    text-align: left;
-}
-
-.sidebar-list {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar-list li {
-    margin: 10px 0;
-    font-size: 16px;
-    border-left: 3px solid #66fcf1;
-    padding-left: 10px;
-    cursor: pointer;
-    transition: color 0.3s ease, border-left-color 0.3s ease;
-}
-
-.sidebar-list li:hover,
-.sidebar-list .active-category {
-    color: #66fcf1;
-    border-left-color: #f0e68c;
-}
-
-/* Content */
-.content {
-    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Content */
+  .content {
     padding: 20px;
-}
-
-.section-title {
+    width: 100%;
+  }
+  
+  .section-title {
     font-size: 32px;
     margin-bottom: 20px;
     text-shadow: 0 0 10px #66fcf1;
-}
-
-/* Team members */
-.team-members {
+  }
+  
+  /* Team members */
+  .team-members {
     display: flex;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
-}
-
-.member-card {
-    width: 150px;
+  }
+  
+  .member-card {
     text-align: center;
-}
-
-.member-image {
-    width: 100px; /* Fixed width for the circle */
-    height: 100px; /* Fixed height for the circle */
-    border-radius: 50%; /* Makes the image circular */
+    width: 350px;
+  }
+  
+  .member-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Circular images */
     border: 2px solid #66fcf1;
-    object-fit: cover; /* Ensures the image fits within the circle */
-}
-
-.member-name {
+  }
+  
+  .member-name {
     margin-top: 10px;
     font-size: 16px;
-}
-.member-position {
+  }
+  
+  .member-position {
     margin-top: 5px;
     font-size: 14px;
     color: #66fcf1; /* Light color for position text */
     font-style: italic;
   }
   
-/* Responsive design */
-@media (max-width: 1024px) {
-    .sidebar {
-        width: 100%; /* Sidebar will take full width */
-        margin-bottom: 20px; /* Add spacing below sidebar */
-    }
-
-    .team-container {
-        flex-direction: column; /* Stack elements vertically */
-    }
-
-    .member-card {
-        width: 120px; /* Adjust card size for smaller screens */
-    }
-
-    .core-team-title {
-        font-size: 36px; /* Reduce font size */
-    }
-
-    .section-title {
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-    }
-
-    .team-members {
-        gap: 10px; /* Reduce spacing between members */
-    }
-
-    .member-card {
-        width: 100px; /* Smaller card size for mobile devices */
-    }
-
-    .core-team-title {
-        font-size: 28px; /* Reduce title font size further */
-    }
-
-    .section-title {
-        font-size: 24px; /* Reduce section title size */
-    }
-}
-
-@media (max-width: 480px) {
-    .core-team-title {
-        font-size: 24px;
-    }
-
-    .section-title {
-        font-size: 20px;
-    }
-
-    .member-card {
-        width: 80px; /* Even smaller card size for very small devices */
-    }
-
-    .member-image {
-        width: 60px; /* Fixed circle size for very small screens */
-        height: 60px;
-    }
-}
+  /* Larger card for middle image */
+  .larger-card {
+    width: 200px; /* Larger width */
+  }
+  
+  .larger-image {
+    width: 150px; /* Larger image size */
+    height: 150px;
+    border: 3px solid #f0e68c; /* Highlighted border for emphasis */
+  }
+  

@@ -3,6 +3,7 @@ import classes from "./About.module.css";
 import about from "./about.svg";
 import text from "../Hero/text.png";
 import ship from '../EventSection/iland.png'
+import pirate from "./pirate.jpg"
 const About = () => {
   return (
     <>
@@ -47,7 +48,7 @@ const About = () => {
           </div>
 
           <div className={classes.composition}>
-            <img className={classes.images} src={ship} alt="about" />
+            <img className={classes.images} src={pirate} alt="about" />
           </div>
         </div>
       </section>
