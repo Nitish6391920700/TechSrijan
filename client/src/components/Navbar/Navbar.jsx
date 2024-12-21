@@ -107,9 +107,9 @@ const Navbar = () => {
                 duration={600}
                 style={{ color: "white", textDecoration: "none" }}
               >
-                <Link className={classes.homeLink} to="/leaderboard">
+                {/* <Link className={classes.homeLink} to="/leaderboard">
                   Leaderboard
-                </Link>
+                </Link> */}
               </Drop>
             </li>
             <li className={classes.navLink}>
@@ -129,16 +129,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://grabbits.vercel.app/"
-          >
-            {/* <button className={classes.btn}>GrabBit</button> */}
-            <div className={classes.btn}>
-              <GrabBitBtn label="GrabBit" />
-            </div>
-          </a>
+          
 
           <div className={classes.hamburger} onClick={() => setMobile(!mobile)}>
             {mobile ? (
@@ -239,9 +230,9 @@ const Navbar = () => {
                 duration={600}
                 style={{ color: "white", textDecoration: "none" }}
               >
-                <Link className={classes.homeLink} to="/leaderboard">
+                {/* <Link className={classes.homeLink} to="/leaderboard">
                   Leaderboard
-                </Link>
+                </Link> */}
               </Drop>
             </li>
             <li>
