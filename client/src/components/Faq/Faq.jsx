@@ -3,22 +3,22 @@ import classes from "./Faq.module.css";
 
 const questions = [
   {
-    question: "What is SAMBHAV 2K23?",
+    question: "What is TechSrijan?",
     answer:
-      "SAMBHAV 2k23 is the one of biggest Technical event in the history of DYPCOE.",
+      "TechSrijan is the  annual technical festival of MMMUT. It is a platform for students to showcase their technical skills and knowledge.",
   },
   {
     question: "What are the Dates and Timings of event?",
     answer:
-      "The event will start at 9AM on 20th Feb and will be till 21st of Feb 10 PM",
+      "The event will start at 27 of December 24 and will be till 29 of December 24. ",
   },
   {
     question: "How can I participate in the event?",
     answer:
-      "Explore various events on the SAMBHAV's website and register for the same",
+      "Explore various events on the TechSijan's website and register for the same",
   },
   {
-    question: "Is there any entry fee for SAMBHAV 2k23?",
+    question: "Is there any entry fee for TechSrijan?",
     answer:
       "No, there is not any entry fee to explore SAMBHAV 2k23 but to participate in some events you have pay registration fee.",
   },

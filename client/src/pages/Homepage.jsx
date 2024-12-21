@@ -3,6 +3,7 @@ import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import Hero from "../components/Hero/Hero";
 import ReactGA from "react-ga";
+import Comm from "../components/JoinCommunity/Comm";
 
 const Homepage = () => {
   useEffect(() => {
@@ -12,6 +13,7 @@ const Homepage = () => {
     <>
       <Hero />
       <About />
+   
       <Contact />
     </>
   );
