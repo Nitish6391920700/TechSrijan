@@ -32,7 +32,7 @@
 .card {
   margin-top: 150px;
   margin-bottom: 50px;
-  width: 45vw;
+  width: 90vw;
   height: auto;
   /* height: 450px; */
   /* background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%); */
@@ -51,7 +51,7 @@
   /* width: 300px;
   height: 450px; */
   padding: 36px 16px 16px 16px;
-  width: 45vw;
+  width: 90vw;
   height: auto;
   background-color: #1a1a1a60;
   border-radius: 20px;
@@ -80,6 +80,12 @@
   margin-top:24px ;
   font-size: 3vw;
   font-weight: 600;
+}
+
+.welcomeheading {
+  margin-top:24px ;
+  font-size: 2vw;
+  font-weight: 300;
 }
 
 .userData {
@@ -179,3 +185,66 @@
     padding: 0px;
   }
 }
+
+
+/* my css */
+
+/* CSS Changes */
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap; /* For responsiveness */
+}
+.contentContainer:hover,.contentContainer:active {
+  transform: scale(0.98);
+  border-radius: 20px;
+  background-color: #1a1a1a;
+}
+.textContent {
+  flex: 1;
+  color: white;
+}
+
+.description {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin: 10px 0;
+  /* gap: 10px; */
+}
+
+.imageContent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .contentContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textContent,
+  .imageContent {
+    flex: none;
+    width: 100%;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+}
+
