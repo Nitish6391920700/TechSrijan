@@ -4,6 +4,7 @@ import Contact from "../components/Contact/Contact";
 import Hero from "../components/Hero/Hero";
 import ReactGA from "react-ga";
 import Comm from "../components/JoinCommunity/Comm";
+import TeamPage from "./Team/Team";
 
 const Homepage = () => {
   useEffect(() => {
@@ -13,7 +14,7 @@ const Homepage = () => {
     <>
       <Hero />
       <About />
-   
+      <TeamPage />
       <Contact />
     </>
   );
