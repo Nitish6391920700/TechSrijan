@@ -1,4 +1,4 @@
-import Khoj from "./Events/Khoj.png";
+import Robo from "./Events/robokriti.png";
 import BlindCoding from "./Events/BlindCoding.png";
 import FlyHigh from "./Events/FlyHigh.png";
 import SpaceExpo from "./Events/SpaceExpo.png";
@@ -22,15 +22,15 @@ import SpeedTypers from "./Events/SpeedTypers.png";
 import SupercarShow from "./Events/SupercarShow.png";
 import TremblingTower from "./Events/TremblingTower.png";
 import Hackathon from "./Events/Hackathon.png";
-import TreasureHunt from "./Events/TreasureHunt.png";
-import SpinningRival from "./Events/SpinningRival.png";
+import B from "./BrainsAndBrawn.png";
+import Code from "./Events/Codezilla.png";
 import quiz from "./Events/quiz.png";
 
 export const eventsData = [
   {
     id: 1,
-    image: Khoj,
-    name: "Khoj",
+    image: Robo,
+    name: "ROBOKRITI",
     description:
       "The KHOJ project idea pitching event is designed to give students an opportunity to showcase their innovative project ideas to a panel of judges. The main objective of this competition is to highlight the students' technical proficiency, creativity, and problem-solving capabilities and provide them with a platform to receive feedback and recognition for their hard work.",
     rules: [
@@ -66,8 +66,8 @@ export const eventsData = [
   },
   {
     id: 2,
-    image: TreasureHunt,
-    name: "TREASURE HUNT",
+    image: B,
+    name: "BRAINS AND BRAWN",
     description:
       "During a logical questions treasure hunt, participants will be given a series of clues or challenges that require logical thinking and problem-solving skills. These clues will be delivered through a variety of formats, such as puzzles, riddles, or logic games, and will require participants to use their critical thinking and reasoning abilities to solve them. As participants solve each clue, they will be led to the next one until they reach the final treasure.",
     rules: [
@@ -89,8 +89,8 @@ export const eventsData = [
   },
   {
     id: 3,
-    image: SpinningRival,
-    name: "SPINNING RIVAL",
+    image: Code,
+    name: "CODE ZILLA",
     description:
       "two challengers go head-to-head in a 1v1 competition. The question to be attempted is randomly chose using “SPIN the WHEEL”. Coding question present on the Spin Wheel.",
     rules: [
