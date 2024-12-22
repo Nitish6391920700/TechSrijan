@@ -11,7 +11,7 @@ import { HashLink as Link } from "react-router-hash-link";
 // import Dropdown from "./Dropdown";
 import { HashLink } from "react-router-hash-link";
 import Logo from "../../assets/Logo.png";
-import GrabBitBtn from "../common/GrabBitBtn/GrabBitBtn";
+
 
 const Scroll = require("react-scroll");
 
@@ -152,9 +152,9 @@ const Navbar = () => {
             href="https://grabbits.vercel.app/"
           >
             {/* <button className={classes.btn1}>GrabBit</button> */}
-            <div className={classes.btn1}>
+            {/* <div className={classes.btn1}>
               <GrabBitBtn label="GrabBit" />
-            </div>
+            </div> */}
           </a>
 
           {/* Mobile Page */}

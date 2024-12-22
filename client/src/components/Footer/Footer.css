@@ -1,0 +1,179 @@
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.footer-section {
+  margin: 10px;
+  flex: 1;
+  min-width: 150px;
+}
+
+.footer-section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ff4081;
+}
+
+.footer-logo {
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+.register-btn {
+  background-color: #ff4081;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.register-btn:hover {
+  background-color: #e03670;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #ff4081;
+}
+
+/* Developer Info Section */
+.developer-info {
+  margin-top: 30px;
+  font-size: 18px; /* Larger font size */
+  color: #ff4081; /* Vibrant color */
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081; /* Glow effect */
+}
+
+.developer-name {
+  color: #66fcf1; /* Unique color for names */
+  text-decoration: underline; /* Add emphasis */
+  font-style: italic;
+}
+
+/* Media query for tablets and smaller devices */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .footer-section {
+    margin: 15px 0;
+    text-align: center; /* Center text for a cleaner look */
+  }
+
+  .footer-logo {
+    max-width: 200px; /* Reduce size of logo */
+  }
+
+  .register-btn {
+    font-size: 12px; /* Adjust button size */
+    padding: 8px 15px;
+  }
+
+  .social-links {
+    gap: 10px; /* Reduce gap between social icons */
+    margin-top: 15px;
+  }
+
+  .social-icon {
+    font-size: 16px; /* Adjust icon size */
+  }
+
+  .developer-info {
+    margin-top: 20px;
+    font-size: 16px;
+    text-shadow: 0 0 5px #ff4081, 0 0 10px #ff4081;
+  }
+
+  .developer-name {
+    font-size: 14px;
+    text-decoration: none;
+  }
+}
+
+/* Media query for very small devices (mobile phones) */
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 5px 0;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+
+  .footer-logo {
+    max-width: 150px; /* Further reduce logo size */
+  }
+
+  .register-btn {
+    font-size: 10px; /* Compact button */
+    padding: 5px 10px;
+  }
+
+  .social-links {
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .social-icon {
+    font-size: 14px;
+  }
+
+  .developer-info {
+    margin-top: 15px;
+    font-size: 14px;
+    text-shadow: none;
+  }
+
+  .developer-name {
+    font-size: 12px;
+    font-style: normal;
+  }
+}
