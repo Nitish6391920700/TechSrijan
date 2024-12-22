@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css'; // Importing global CSS
 import logo from '../Hero/text.png'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -8,7 +9,12 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-section">
           <img src={logo} alt="Antragni Logo" className="footer-logo" />
-          <button className="register-btn">Register Now</button>
+          <Link
+          
+            to="https://linktr.ee/techsrijan">
+          <button  className="register-btn">Register Now</button>
+          </Link>
+          
         </div>
         <div className="footer-section">
           <h3>Participate</h3>

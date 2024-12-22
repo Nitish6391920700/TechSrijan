@@ -196,6 +196,7 @@
   .hamburger {
     display: inline-block;
     margin-right: 0.5rem;
+    z-index: 500;
   }
 
   .none {

@@ -149,12 +149,9 @@ const Navbar = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://grabbits.vercel.app/"
+           
           >
-            {/* <button className={classes.btn1}>GrabBit</button> */}
-            {/* <div className={classes.btn1}>
-              <GrabBitBtn label="GrabBit" />
-            </div> */}
+         
           </a>
 
           {/* Mobile Page */}
@@ -220,22 +217,7 @@ const Navbar = () => {
                 />
               </li>
             </Link>
-            <li>
-              <Drop
-                onClick={() => setMobile(!mobile)}
-                activeClass={classes.active}
-                to="ambassador"
-                spy="true"
-                smooth={true}
-                offset={-100}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
-              >
-                {/* <Link className={classes.homeLink} to="/leaderboard">
-                  Leaderboard
-                </Link> */}
-              </Drop>
-            </li>
+           
             <li>
               <Drop
                 onClick={() => setMobile(!mobile)}

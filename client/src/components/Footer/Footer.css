@@ -43,8 +43,11 @@ footer {
 }
 
 .footer-logo {
-  max-width: 300px;
+  max-width: 250px; /* Adjust logo size for mobile */
   margin-bottom: 10px;
+  margin-left: auto; /* Center align horizontally */
+  margin-right: auto; /* Center align horizontally */
+  display: block; /* Ensures proper alignment */
 }
 
 .register-btn {
@@ -141,39 +144,29 @@ footer {
 /* Media query for very small devices (mobile phones) */
 @media (max-width: 480px) {
   .footer-container {
-    padding: 5px 0;
-  }
-
-  .footer-section {
-    margin: 10px 0;
+    display: flex;
+    flex-direction: column; /* Stack content in a column */
+    align-items: center; /* Center content horizontally */
+    padding: 10px 0;
   }
 
   .footer-logo {
-    max-width: 150px; /* Further reduce logo size */
+    max-width: 150px; /* Further reduce logo size for small screens */
+    margin-bottom: 15px;
+  }
+
+  .footer-section {
+    margin: 10px 0; /* Add spacing between sections */
   }
 
   .register-btn {
-    font-size: 10px; /* Compact button */
-    padding: 5px 10px;
+    font-size: 12px; /* Adjust button size */
+    padding: 8px 15px;
+    margin: 15px 0; /* Add spacing above and below */
   }
 
   .social-links {
-    gap: 8px;
-    margin-top: 10px;
-  }
-
-  .social-icon {
-    font-size: 14px;
-  }
-
-  .developer-info {
+    gap: 10px; /* Reduce gap between social icons */
     margin-top: 15px;
-    font-size: 14px;
-    text-shadow: none;
-  }
-
-  .developer-name {
-    font-size: 12px;
-    font-style: normal;
   }
 }
