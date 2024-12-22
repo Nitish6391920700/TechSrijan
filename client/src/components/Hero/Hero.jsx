@@ -49,7 +49,7 @@ const Hero = () => {
     <section id="home" className={classes.hero}>
       <div className={classes.herobox}>
         <div className={classes.headerbox}>
-          {/* <h1 className={classes.heading}>Sambhav</h1> */}
+         
           <img src={text_img} className={classes.text_img} alt="text_img" />
 
           <h4 className={classes.caption}>Let&apos;s make a tech move!</h4>

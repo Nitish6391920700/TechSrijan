@@ -20,7 +20,7 @@ const questions = [
   {
     question: "Is there any entry fee for TechSrijan?",
     answer:
-      "No, there is not any entry fee to explore SAMBHAV 2k23 but to participate in some events you have pay registration fee.",
+      "No, there is not any entry fee to explore TechSrijan but to participate in some events you have pay registration fee.",
   },
 ];
 
