@@ -14,6 +14,7 @@ import Register from "./components/common/Register/Register";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Loading from "./components/common/Loading/Loading";
 import Popup from "./components/common/Popup/Popup";
+import StuMember from "./components/Studentmember/Stumember";
 // import SwupOverlayTheme from "@swup/overlay-theme";
 // import Swup from "swup";
 /* Google Analytics */
@@ -68,6 +69,7 @@ const App = () => {
             <Route path="/register" element={<Register />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/hidden" element={<Hidden/>} />
+            <Route path="/team" element={<StuMember/>} />
             {/*   <Route path="/leaderboard/:eventId" element={<Leaderboard />} />
           <Route path="*" element={<NotFound />}></Route> */}
             {/* <Route path="/" element={<Landing />}></Route>  */}

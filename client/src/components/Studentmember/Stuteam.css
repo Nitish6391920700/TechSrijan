@@ -1,0 +1,167 @@
+/* Reset styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b0c10; /* Dark background */
+    color: white;
+}
+
+/* Main container */
+.team-page {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    margin-bottom: 20px;
+}
+
+.core-team-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f0e68c; /* Light glow effect */
+    margin-top: 120px;
+    text-shadow: 0 0 15px #f0e68c, 0 0 30px #f0e68c;
+}
+
+/* Team container */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center team members */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    padding: 10px;
+    background-color: #1f2833;
+    /* border-radius: 10px; */
+    text-align: left;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-list li {
+    margin: 10px 0;
+    font-size: 16px;
+    border-left: 3px solid #66fcf1;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease, border-left-color 0.3s ease;
+}
+
+.sidebar-list li:hover,
+.sidebar-list .active-category {
+    color: #66fcf1;
+    border-left-color: #f0e68c;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #66fcf1;
+}
+
+/* Team members */
+.team-members {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.member-card {
+    width: 300px;
+    text-align: center;
+}
+
+.member-imagee {
+    width: 289px; /* Fixed width for the circle */
+    height: 324px; /* Fixed height for the circle */
+    border-radius: 5%; 
+    border: 2px solid #66fcf1;
+    /* object-fit: cover;  */
+}
+
+.member-name {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 100%; /* Sidebar will take full width */
+        margin-bottom: 20px; /* Add spacing below sidebar */
+    }
+
+    .team-container {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .member-card {
+        width: 120px; /* Adjust card size for smaller screens */
+    }
+
+    .core-team-title {
+        font-size: 36px; /* Reduce font size */
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .team-members {
+        gap: 10px; /* Reduce spacing between members */
+    }
+
+    .member-card {
+        width: 100px; /* Smaller card size for mobile devices */
+    }
+
+    .core-team-title {
+        font-size: 28px; /* Reduce title font size further */
+    }
+
+    .section-title {
+        font-size: 24px; /* Reduce section title size */
+    }
+}
+
+@media (max-width: 480px) {
+    .core-team-title {
+        font-size: 24px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .member-card {
+        width: 80px; /* Even smaller card size for very small devices */
+    }
+
+    .member-image {
+        width: 60px;
+        height: 100px;
+    }
+}

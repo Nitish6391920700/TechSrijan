@@ -33,7 +33,7 @@ const Footer = () => {
       </a>
     </li>
     <li>
-      <a href="https://chat.whatsapp.com/your-group-link" target="_blank" rel="noopener noreferrer">
+      <a href="https://whatsapp.com/channel/0029VaJ4Ql1ADTOG3gpxv03N" target="_blank" rel="noopener noreferrer">
         Join our WhatsApp Community
       </a>
     </li>
