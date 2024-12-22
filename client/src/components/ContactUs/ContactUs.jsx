@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from "./ContactUs.module.css"
 import Button from "../common/Button/Button"
+import { Link } from 'react-router-dom'
 
 const ContactUs = () => {
   return (
@@ -17,7 +18,9 @@ const ContactUs = () => {
             Stay tuned for all the latest updates, event announcements, and exclusive content related to Antaragni, our annual cultural extravaganza. Join us in celebrating creativity, talent, and the vibrant spirit of campus life. Don't miss out on any of the action. This is where the magic happens!
             </p>
             <div className={classes.button}>
-              <Button label="Join WhatsApp Channel" />
+             
+              <Button hrefLink="https://whatsapp.com/channel/0029VaJ4Ql1ADTOG3gpxv03N" label="Join WhatsApp Channel" />
+              
             </div>
           </div>
           <div className={classes.imageContent}>

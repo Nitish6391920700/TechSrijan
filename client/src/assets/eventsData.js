@@ -45,10 +45,10 @@ export const eventsData = [
   ],
   prizes: ["1st Prize: ₹3000", "2nd Prize: ₹2000", "3rd Prize: ₹1000"],
   team: "5",
-  fees: "₹3000 per team",
+  fees: "Free",
   contactInfo: [
     "Vaibhav, ECE, 3rd Year : 9506170955",
-    "Vivek Soni, ECE, 3rd Year : 6202843158"
+    "Anurag Singh, ECE, 2nd Year : 8178021919"
   ],
   location: "Multi-Purpose Hall",
   date: "27th to 29th December 2024",
@@ -77,7 +77,7 @@ export const eventsData = [
   ],
   prizes: ["1st Prize: ₹3000", "2nd Prize: ₹2000", "3rd Prize: ₹1000"],
   team: "5",
-  fees: "₹0 per team",
+  fees: "Free",
   contactInfo: [
     "Shreya Singh, BBA, 2nd Year : 7992167700",
     "Sarfaraz Siddiqui, CSE, 2nd Year : 9044356253"
@@ -115,7 +115,7 @@ export const eventsData = [
   ],
   prizes: ["1st Prize: ₹3000", "2nd Prize: ₹2000", "3rd Prize: ₹1000"],
   team: "1",
-  fees: "₹0 per team",
+  fees: "Free",
   contactInfo: [
     "Vishesh Mishra, CSE, 2nd Year: 9506181001",
     "Prerna Nishad, CSE, 2nd Year: 8808575891"
@@ -154,7 +154,7 @@ export const eventsData = [
     ],
     prizes: ["1st Prize: ₹3000", "2nd Prize: ₹2000", "3rd Prize: ₹1000"],
     team: "2",
-    fees: "₹0 per team",
+    fees: "Free",
     contactInfo: [
       "Nilesh Kumar, EE, 2nd Year: 8528855010",
       "Anshika Pandey, ECE, 2nd Year: 8957685237"
@@ -179,7 +179,7 @@ export const eventsData = [
   ],
   prizes: ["1st Prize: ₹3000", "2nd Prize: ₹2000", "3rd Prize: ₹1000"],
   team: "2",
-  fees: "₹0 per team",
+  fees: "Free",
   contactInfo: [
     "Anushka Paswan, CSE, 2nd Year: 8931927194",
     "Nikhil Jaiswal, ECE, 2nd Year: 9794658774"
@@ -211,7 +211,7 @@ export const eventsData = [
     ],
     prizes: ["1st Prize: ₹3000", "2nd Prize: ₹2000", "3rd Prize: ₹1000"],
     team: "1",
-    fees: "₹0 per participant",
+    fees: "Free",
     contactInfo: [
       "Ankur Yadav, CH, 2nd Year: 8303486967",
       "Prachi Yadav, ME, 2nd Year: 9336169451"
@@ -237,7 +237,7 @@ export const eventsData = [
   ],
   prizes: ["Prize Pool ₹20,000"],
   team: "Depending on game",
-  fees: "Depending on game",
+  fees: "Free",
   contactInfo: [
     "Anurag Singh, ECE, 2nd Year: 8178021919",
     "Nikhil Kumar Jaiswal, ECE, 2nd Year: 9794658774"
@@ -272,7 +272,7 @@ export const eventsData = [
     "3rd Prize: ₹1000"
   ],
   "team": "4",
-  "fees": "Depends on game",
+  "fees": "Free",
   "contactInfo": [
     "Deepak Singh, CSE, 2nd Year: 8381990561",
     "Ankul Maddheshiya, ME, 2nd Year: 8471044788"

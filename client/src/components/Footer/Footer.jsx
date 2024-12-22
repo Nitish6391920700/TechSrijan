@@ -20,7 +20,6 @@ const Footer = () => {
           <h3>Participate</h3>
           <ul>
             <li><a href="#events">Events Portal</a></li>
-            <li><a href="#ca">CA Portal</a></li>
             <li><a href="#community">Join The Community</a></li>
           </ul>
         </div>
@@ -28,7 +27,7 @@ const Footer = () => {
   <h3>Stay Connected</h3>
   <ul>
     <li>
-      <a href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.instagram.com/techsrijan.mmmut/" target="_blank" rel="noopener noreferrer">
         Follow us on Instagram
       </a>
     </li>

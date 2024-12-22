@@ -1,145 +1,231 @@
 .singleEvent {
   width: 100vw;
-  height: 120vh;
-  background: url(./backGround.svg);
+  min-height: 100vh;
+  background: 
+    linear-gradient(to bottom, rgba(0, 4, 400, 0.2), rgba(198, 205, 211, 0.9)),
+    url('https://getwallpapers.com/wallpaper/full/b/0/4/1189112-pirate-ships-wallpaper-1920x1080-photos.jpg'); /* Replace with your image URL */
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 16px;
+  padding-top: 120px; /* Added padding to prevent hiding behind navbar */
+}
+.tableContainer {
+  max-height: 400px; /* Adjust height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin-top: 20px; /* Consistent spacing */
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1); /* Same background as table */
+  padding: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Optional for better separation */
 }
 
-.singleEventCard {
-  width: 85vw;
-  height: 40vw;
-  margin-top: 10vh;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
-  display: flex;
-  padding: 18px;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.detailsTable {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.col1 {
-  width: 49%;
-  height: 100%;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.detailsTable th,
+.detailsTable td {
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
 }
 
-.eventPoster {
-  width: auto;
-  height: 100%;
-  border-radius: 20px;
-}
-
-.col2 {
-  width: 49%;
-  height: 100%;
-  overflow: scroll;
-  overflow-x: hidden;
-  padding: 16px;
+.detailsTable th {
+  background-color: #09b9ff;
   color: white;
 }
 
-.eventHeading {
-  font-size: 36px;
-  font-weight: 600;
-  margin-bottom: 16px;
-}
-.rowcol {
-  display: flex;
+.detailsTable td {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.subheading {
-  margin: 20px;
+.detailsTable tr:last-child td {
+  border-bottom: none;
+}
+
+
+
+.singleEventCard {
+  position: relative; /* Required for the pseudo-element positioning */
+  width: 90%;
+  max-width: 1200px;
+  background-color:transparent; /* Slightly transparent black */
+  backdrop-filter: blur(5px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 40px 5px rgba(0, 170, 255, 0.4);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow: hidden; /* Ensures the overlay doesn't overflow */
+}
+
+.singleEventCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white overlay */
+  z-index: 1; /* Ensures it overlays the content */
+  pointer-events: none; /* Prevents interaction with the overlay */
+}
+
+.singleEventCard > * {
+  position: relative; /* Ensures child elements appear above the overlay */
+  z-index: 2;
+}
+
+.col1 {
+  width: 30%;
+  position: sticky;
+  top: 96px; /* Adjusted to account for navbar height */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
+  align-items: center;
+  gap: 16px;
 }
 
-.heading,
-.headingp {
-  font-size: 24px;
-  font-weight: 500;
-  background-image: linear-gradient(to bottom right, #3232ff, #09b9ff);
-  padding: 4px 12px 4px 12px;
-  border-radius: 4px;
-}
-.headingp {
-  background-image: linear-gradient(to bottom right, #ff00ee, #ff0932);
+.eventPoster {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
 }
 
-.content {
+.registerButton {
+  margin-top: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.col2 {
+  width: 70%;
+  color: #e6e6e6;
+}
+
+.eventHeading {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffeb3b;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(255, 235, 59, 0.8);
+}
+
+.subheading {
+  margin: 20px 0;
+}
+
+.heading {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(to bottom right, #3232ff, #09b9ff);
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.detailsTable {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.detailsTable th,
+.detailsTable td {
+  padding: 12px;
+  text-align: left;
   font-size: 16px;
-  font-weight: 300;
+}
+
+.detailsTable th {
+  background-color: #09b9ff;
+  color: white;
+}
+
+.detailsTable td {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #0b0808;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.detailsTable tr:last-child td {
+  border-bottom: none;
+}
+
+.list {
+  padding-left: 20px;
+}
+
+.soon {
+  color: #ffbe0b;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(255, 207, 50, 0.914);
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 768px) {
   .singleEventCard {
-    display: flex;
     flex-direction: column;
-    height: 95vh;
-    padding: 4px;
   }
 
   .col1 {
     width: 100%;
-    height: auto;
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-
-  .eventPoster {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
+    margin-bottom: 20px;
+    position: static;
   }
 
   .col2 {
     width: 100%;
-    padding: 8px 16px 16px 16px;
+  }
+
+  .eventPoster {
+    max-width: 100%;
   }
 
   .eventHeading {
     font-size: 28px;
-    font-weight: 500;
-    margin-bottom: 8px;
-  }
-
-  .subheading {
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4px;
   }
 
   .heading {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
   }
 
-  .content {
-    font-size: 15px;
-    font-weight: 400;
+  .detailsTable th,
+  .detailsTable td {
+    font-size: 14px;
   }
-}
-.soon {
-  color: #ff32ad;
-  font-size: 20px;
+
+  .registerButton {
+    width: 100%;
+  }
 }
