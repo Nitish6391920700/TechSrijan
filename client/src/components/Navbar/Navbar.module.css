@@ -105,7 +105,7 @@
   text-decoration: none;
   margin-right: 3rem;
   cursor: pointer;
-  background-image: linear-gradient(to bottom right, #ff00ee, #ff0932);
+  background-image: linear-gradient(to bottom right,   #ffbe0b, #ff0932);
 
   -webkit-background-clip: text;
   /* -webkit-text-fill-color: transparent; */

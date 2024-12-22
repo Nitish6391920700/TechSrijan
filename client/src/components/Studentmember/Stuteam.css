@@ -155,13 +155,16 @@ body, html {
     .section-title {
         font-size: 20px;
     }
+    .team-members {
+        gap: 94px; /* Reduce spacing between members */
+    }
 
     .member-card {
         width: 80px; /* Even smaller card size for very small devices */
     }
 
-    .member-image {
-        width: 60px;
-        height: 100px;
+    .member-imagee {
+        width: 150px;
+        height: 200px;
     }
 }
